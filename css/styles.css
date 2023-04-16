@@ -36,6 +36,7 @@ h2 {
     font-size: 0.6rem;
     font-weight: 700;
     display: inline;
+    margin-right: 10px;
 }
 
 input[type="checkbox"].switch {
@@ -59,7 +60,6 @@ input[type="checkbox"].switch + label:before {
     width: 2em;
     background: linear-gradient(90deg, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
     border-radius: 1em;
-    /* transition: background-color 200ms ease-in-out; */
 }
 
 input[type="checkbox"].switch + label:after {
