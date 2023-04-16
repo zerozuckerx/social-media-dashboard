@@ -39,19 +39,18 @@ h2 {
 }
 
 input[type="checkbox"].switch {
-    opacity: 0.1;
     position: absolute;
+    opacity: 0;
     top: -9000px;
     left: -9000px;
 }
 
 input[type="checkbox"].switch + label {
     display: flex;
-    justify-content: center;
     align-items: center;
+    cursor: pointer;
     position: relative;
     font-size: 1.2em;
-    margin-left: 10px;
 }
 
 input[type="checkbox"].switch + label:before {
@@ -60,29 +59,27 @@ input[type="checkbox"].switch + label:before {
     width: 2em;
     background: linear-gradient(90deg, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
     border-radius: 1em;
+    /* transition: background-color 200ms ease-in-out; */
 }
 
 input[type="checkbox"].switch + label:after {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     content: "";
+    position: absolute;
     height: 0.75em;
     width: 0.75em;
-    position: absolute;
-    top: 0.1em;
-    left: 0.15em;
+    left: 0.18em;
     background: #fff;
     border-radius: 1em;
+    transition: transform 200ms ease-in-out;
 }
 
 input[type="checkbox"].switch:checked + label:after {
-    content: "";
-    height: 0.75em;
-    width: 0.75em;
-    position: absolute;
-    top: 0.1em;
-    left: 1.08em;
+    transform: translateX(125%);
     background: #fff;
     border-radius: 1em;
-    transition: translateX(2s ease-in-out);
 }
 
 .attribution {
