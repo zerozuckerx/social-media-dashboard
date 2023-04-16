@@ -49,7 +49,9 @@ input[type="checkbox"].switch + label {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
     font-size: 1.2em;
+    margin-left: 10px;
 }
 
 input[type="checkbox"].switch + label:before {
@@ -60,8 +62,27 @@ input[type="checkbox"].switch + label:before {
     border-radius: 1em;
 }
 
-input[type="checkbox"].switch:checked + label {
-    color:red;
+input[type="checkbox"].switch + label:after {
+    content: "";
+    height: 0.75em;
+    width: 0.75em;
+    position: absolute;
+    top: 0.1em;
+    left: 0.15em;
+    background: #fff;
+    border-radius: 1em;
+}
+
+input[type="checkbox"].switch:checked + label:after {
+    content: "";
+    height: 0.75em;
+    width: 0.75em;
+    position: absolute;
+    top: 0.1em;
+    left: 1.08em;
+    background: #fff;
+    border-radius: 1em;
+    transition: translateX(2s ease-in-out);
 }
 
 .attribution {
