@@ -38,7 +38,31 @@ h2 {
     display: inline;
 }
 
+input[type="checkbox"].switch {
+    opacity: 0.1;
+    position: absolute;
+    top: -9000px;
+    left: -9000px;
+}
 
+input[type="checkbox"].switch + label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+input[type="checkbox"].switch + label:before {
+    content: "";
+    height: 1em;
+    width: 2em;
+    background: linear-gradient(90deg, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+    border-radius: 1em;
+}
+
+input[type="checkbox"].switch:checked + label {
+    color:red;
+}
 
 .attribution {
     font-size: 0.8rem;
