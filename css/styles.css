@@ -81,12 +81,3 @@ input[type="checkbox"].switch:checked + label:after {
     background: #fff;
     border-radius: 1em;
 }
-
-.attribution {
-    font-size: 0.8rem;
-    text-align: center;
-}
-.attribution a {
-    color: hsl(139, 49%, 45%);
-    text-decoration: none;
-}
