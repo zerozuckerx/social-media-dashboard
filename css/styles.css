@@ -101,10 +101,22 @@ input[type="checkbox"].switch:checked + label:after {
     background-color: hsl(225, 100%, 98%);
     border-radius: 0.2rem;
     text-align: center;
+    height: 100%;
+    /* width: 20%; */
 }
 
 .card-big:hover {
     background-color: hsl(227, 47%, 96%);
+}
+
+.gradient-border {
+    background: linear-gradient(90deg,hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .facebook {
@@ -128,6 +140,7 @@ input[type="checkbox"].switch:checked + label:after {
     display: inline;
     font-size: 0.5rem;
     font-weight: 700;
+    margin-left: 8px;
 }
 
 .count {
