@@ -24,6 +24,12 @@ h2 {
     font-weight: 700;
 }
 
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -93,46 +99,45 @@ input[type="checkbox"].switch:checked + label:after {
 }
 
 .top-cards {
-    display: flex;
     justify-content: space-between;
 }
 
-.card-big {
-    background-color: hsl(225, 100%, 98%);
-    border-radius: 0.2rem;
-    text-align: center;
-    height: 100%;
-    /* width: 20%; */
-}
-
-.card-big:hover {
-    background-color: hsl(227, 47%, 96%);
-}
-
-.gradient-border {
-    background: linear-gradient(90deg,hsl(37, 97%, 70%), hsl(329, 70%, 58%));
-}
-
-.flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.wrapper-border {
+    border-radius: 0.15rem;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: flex-end; */
+    width: 20%;
 }
 
 .facebook {
-    border-top: 3px solid hsl(208, 92%, 53%);
+   background: hsl(208, 92%, 53%);
 }
 
 .twitter {
-    border-top: 3px solid hsl(203, 89%, 53%);
+   background: hsl(203, 89%, 53%);
 }
 
 .instagram {
-    border-top: 3px solid linear-gradient(90deg,hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+    background: linear-gradient(hsl(37, 97%, 70%), hsl(329, 70%, 58%));
 }
 
 .youtube {
-    border-top: 3px solid hsl(348, 97%, 39%);
+   background: hsl(348, 97%, 39%);
+}
+
+.card-big {
+    text-align: center;
+    border-radius: 0.15rem;
+    height: 95%;
+}
+
+.light {
+    background-color: hsl(225, 100%, 98%);
+}
+
+.light:hover {
+    background-color: hsl(227, 47%, 96%);
 }
 
 .account-name {
@@ -153,12 +158,13 @@ input[type="checkbox"].switch:checked + label:after {
 .follow-sub {
     color: hsl(228, 12%, 44%);
     font-size: 0.5rem;
-    font-weight: 200;
-    letter-spacing: 0.5rem;
+    font-weight: 300;
+    letter-spacing: 0.4rem;
 }
 
 .today {
     display: inline;
+    font-size: 0.5rem;
 }
 
 .positive {
@@ -169,4 +175,14 @@ input[type="checkbox"].switch:checked + label:after {
 
 .positive:before {
     content: url('data:image/svg+xml, %3Csvg xmlns="http://www.w3.org/2000/svg" width="8" height="4"%3E%3Cpath fill="%231EB589" fill-rule="evenodd" d="M0 4l4-4 4 4z"/%3E%3C/svg%3E');
+}
+
+.negative {
+    color: hsl(356, 69%, 56%);
+    font-size: 0.5rem;
+    font-weight: 700;
+}
+
+.negative:before {
+    content: url('data:image/svg+xml, %3Csvg xmlns="http://www.w3.org/2000/svg" width="8" height="4"%3E%3Cpath fill="%23DC414C" fill-rule="evenodd" d="M0 0l4 4 4-4z"/%3E%3C/svg%3E');
 }
