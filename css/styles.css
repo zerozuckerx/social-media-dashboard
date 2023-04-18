@@ -104,10 +104,10 @@ input[type="checkbox"].switch:checked + label:after {
 
 .wrapper-border {
     border-radius: 0.15rem;
-    /* display: flex;
+    display: flex;
     flex-direction: column;
-    justify-content: flex-end; */
-    width: 20%;
+    justify-content: flex-end;
+    width: 23%;
 }
 
 .facebook {
@@ -127,9 +127,9 @@ input[type="checkbox"].switch:checked + label:after {
 }
 
 .card-big {
+    margin-top: 2%;
+    padding: 5% 0 10%;
     text-align: center;
-    border-radius: 0.15rem;
-    height: 95%;
 }
 
 .light {
