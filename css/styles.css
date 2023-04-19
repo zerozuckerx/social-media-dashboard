@@ -103,7 +103,10 @@ input[type="checkbox"].switch:checked + label:after {
 }
 
 .wrapper-border {
-    border-radius: 0.15rem;
+    border-top-left-radius: 0.15rem;
+    border-top-right-radius: 0.15rem;
+    border-bottom-left-radius: ;
+    border-bottom-right-radius: 0;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -127,6 +130,8 @@ input[type="checkbox"].switch:checked + label:after {
 }
 
 .card-big {
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
     margin-top: 2%;
     padding: 5% 0 10%;
     text-align: center;
@@ -191,4 +196,17 @@ input[type="checkbox"].switch:checked + label:after {
     position: relative;
     left: -4px;
     bottom: 0.15rem;
+}
+
+.bottom-cards {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.card-small {
+    border: 1px solid black;
+    border-radius: 0.15rem;
+    width: 20%;
+    padding: 2%;
 }
