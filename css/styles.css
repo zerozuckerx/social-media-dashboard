@@ -1,5 +1,5 @@
 :root {
-    /*COLORS*/
+    /*LIGHT MODE COLORS*/
     --main-bg-clr: hsl(0, 0%, 100%);
     --top-bg-pattern-clr: hsl(225, 100%, 98%);
     --card-bg-clr: hsl(227, 47%, 96%);
@@ -7,6 +7,26 @@
     --text-light-clr: hsl(228, 12%, 44%);
     --text-dark-clr: hsl(230, 17%, 14%);
 
+    /*DARK MODE COLORS*/
+    --main-bg-clr-dark: hsl(230, 17%, 14%)
+    --top-bg-pattern-clr-dark: hsl(232, 19%, 15%)
+    --card-bg-clr-dark: hsl(228, 28%, 20%)
+    --card-bg-clr-dark-hover: hsl(228, 28%, 18%)
+    --text-dark-clr-dark: hsl(228, 34%, 66%)
+    --text-light-clr-dark: hsl(0, 0%, 100%)
+
+    /* OTHER COLORS*/
+    --positive-clr: hsl(163, 72%, 41%);
+    --negative-clr: hsl(356, 69%, 56%);
+
+    --facebook-clr: hsl(208, 92%, 53%);
+    --twitter-clr: hsl(203, 89%, 53%);
+    --instagram-left-clr: hsl(37, 97%, 70%);
+    --instagram-right-clr: hsl(329, 70%, 58%);
+    --instagram-clr: linear-gradient(to right, var(--instagram-left-clr), var(--instagram-right-clr));
+    --youtube-clr: hsl(348, 97%, 39%);
+
+    /*SPACING*/
     --card-width: 22%;
 }
 
@@ -77,7 +97,7 @@ h2 {
     margin-right: 10px;
 }
 
-/******** DARKMODE TOGGLE CHECKBOX ********/
+/******** DARK MODE TOGGLE CHECKBOX ********/
 
 input[type="checkbox"].switch {
     position: absolute;
@@ -142,19 +162,19 @@ input[type="checkbox"].switch:checked + label:after {
 }
 
 .facebook {
-    background: hsl(208, 92%, 53%);
+    background: var(--facebook-clr);
 }
 
 .twitter {
-    background: hsl(203, 89%, 53%);
+    background: var(--twitter-clr);
 }
 
 .instagram {
-    background: linear-gradient(hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+    background: var(--instagram-clr);
 }
 
 .youtube {
-    background: hsl(348, 97%, 39%);
+    background: var(--youtube-clr);
 }
 
 .card-big {
@@ -175,7 +195,7 @@ input[type="checkbox"].switch:checked + label:after {
 }
 
 .account-name {
-    color: hsl(228, 12%, 44%);
+    color: var(--text-light-clr);
     /* display: inline; */
     font-size: 0.5rem;
     font-weight: 700;
@@ -186,6 +206,7 @@ input[type="checkbox"].switch:checked + label:after {
     margin: 1.2rem auto
 }
 
+/* ????????? */
 .count-big-light {
     color: hsl(230, 17%, 14%);
     font-size: 2.5rem;
@@ -193,7 +214,7 @@ input[type="checkbox"].switch:checked + label:after {
 }
 
 .follow-sub {
-    color: hsl(228, 12%, 44%);
+    color: var(--text-light-clr);
     font-size: 0.5rem;
     font-weight: 300;
     letter-spacing: 0.4rem;
@@ -204,7 +225,7 @@ input[type="checkbox"].switch:checked + label:after {
 }
 
 .positive {
-    color: hsl(163, 72%, 41%);
+    color: var(--positive-clr);
     font-size: 0.5rem;
     font-weight: 700;
 }
@@ -217,7 +238,7 @@ input[type="checkbox"].switch:checked + label:after {
 }
 
 .negative {
-    color: hsl(356, 69%, 56%);
+    color: var(--negative-clr);
     font-size: 0.5rem;
     font-weight: 700;
 }
@@ -236,7 +257,6 @@ input[type="checkbox"].switch:checked + label:after {
     justify-content: space-between;
     flex-wrap: wrap;
     row-gap: 30px;
-    /* height: 300px; */
     width: 100%;
 }
 
@@ -256,13 +276,14 @@ input[type="checkbox"].switch:checked + label:after {
     background-color: var(--card-bg-clr-hover);
 }
 .views-likes {
-    color: hsl(228, 12%, 44%);
+    color: var(--text-light-clr);
     font-size: 0.8rem;
     font-weight: 700;
 }
 
 .count-small {
     display: inline-block;
+    color: var(--text-dark-clr);
     font-size: 1.5rem;
     font-weight: 700;
 }
