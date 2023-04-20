@@ -161,7 +161,7 @@ input[type="checkbox"].switch:checked + label:after {
     margin-left: 8px;
 }
 
-.count {
+.count-big {
     color: hsl(230, 17%, 14%);
     margin: 0;
     font-size: 2.5rem;
@@ -211,12 +211,29 @@ input[type="checkbox"].switch:checked + label:after {
     justify-content: space-between;
     flex-wrap: wrap;
     row-gap: 30px;
+    /* height: 300px; */
     width: 100%;
 }
 
 .card-small {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.5rem;
     box-sizing: border-box;
     border-radius: 0.3rem;
-    padding: 0 2%;
+    padding: 2%;
     width: 22%;
+}
+
+.views-likes {
+    color: hsl(228, 12%, 44%);
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.count-small {
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 700;
 }
