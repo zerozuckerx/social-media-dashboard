@@ -168,9 +168,12 @@ input[type="checkbox"].switch:checked + label:after {
     margin-left: 8px;
 }
 
+.card-big > .spacer {
+    margin: 1.2rem auto
+}
+
 .count-big {
     color: hsl(230, 17%, 14%);
-    /* margin: 0; */
     font-size: 2.5rem;
     font-weight: 700;
 }
@@ -183,7 +186,6 @@ input[type="checkbox"].switch:checked + label:after {
 }
 
 .today {
-    /* display: inline; */
     font-size: 0.5rem;
 }
 
