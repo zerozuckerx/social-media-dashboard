@@ -1,3 +1,7 @@
+:root {
+    --card-width: 22%;
+}
+
 * { 
     font-family: "Inter", sans-serif;
     font-size: 16px;
@@ -120,7 +124,7 @@ input[type="checkbox"].switch:checked + label:after {
     border-top-right-radius: 0.3rem;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
-    width: 22%;
+    width: var(--card-width);
 }
 
 .card-big {
@@ -133,7 +137,6 @@ input[type="checkbox"].switch:checked + label:after {
 
 .card-big > span {
     display: inline-block;
-    /* margin: 5px 0; */
 }
 
 .facebook {
@@ -232,7 +235,7 @@ input[type="checkbox"].switch:checked + label:after {
     box-sizing: border-box;
     border-radius: 0.3rem;
     padding: 2%;
-    width: 22%;
+    width: var(--card-width);
 }
 
 .views-likes {
