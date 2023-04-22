@@ -3,7 +3,7 @@
     --main-bg-clr: hsl(0, 0%, 100%);
     --top-bg-pattern-clr: hsl(225, 100%, 98%);
     --card-bg-clr: hsl(227, 47%, 96%);
-    --card-bg-clr-hover: hsl(227, 47%, 94%);
+    --card-bg-clr-hover: hsl(218, 46%, 93%);
     --text-light-clr: hsl(228, 12%, 44%);
     --text-dark-clr: hsl(230, 17%, 14%);
 
@@ -210,7 +210,6 @@ input[type="checkbox"].switch:checked + label:after {
     margin: 1.2rem auto
 }
 
-/* ????????? */
 .count-big {
     color: hsl(230, 17%, 14%);
     font-size: 2.5rem;
@@ -299,20 +298,25 @@ input[type="checkbox"].switch:checked + label:after {
 
 .dark-mode .nav-left h1,
 .dark-mode .nav-right .dark-mode-text,
-.dark-mode .count-big {
+.dark-mode .card-big .count-big,
+.dark-mode h2,
+.dark-mode .card-small .count-small {
     color: var(--text-light-clr-dark);
 }
 
 .dark-mode .nav-left .follower-count,
-.dark-mode .account-name,
-.dark-mode .follow-sub {
+.dark-mode .card-big .account-name,
+.dark-mode .card-big .follow-sub,
+.dark-mode .card-small .views-likes {
     color: var(--text-dark-clr-dark);
 }
 
-.dark-mode .card-big {
+.dark-mode .card-big,
+.dark-mode .card-small {
     background-color: var(--card-bg-clr-dark);
 }
 
-.dark-mode .card-big:hover {
+.dark-mode .card-big:hover,
+.dark-mode .card-small:hover {
     background-color: var(--card-bg-clr-dark-hover);
 }
