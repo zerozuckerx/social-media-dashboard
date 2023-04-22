@@ -1,12 +1,10 @@
 const toggleButton = document.querySelector("input[type=checkbox]");
-const bigCards = document.querySelectorAll(".card-big");
+const body = document.querySelector("body");
+const topCards = document.querySelector(".top-cards");
 
-toggleButton.addEventListener("change", () => {
-  darkModeOn();
-});
+toggleButton.addEventListener("change", () => darkModeOn());
 
 function darkModeOn() {
-  bigCards.forEach(bigCard => {
-    bigCard.classList.toggle("card-bg-light");
-    bigCard.classList.toggle("card-bg-dark");
-})};
+  body.classList.toggle("dark-mode");
+  // topCards.classList.toggle("dark-mode");
+};

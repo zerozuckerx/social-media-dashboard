@@ -8,12 +8,12 @@
     --text-dark-clr: hsl(230, 17%, 14%);
 
     /*DARK MODE COLORS*/
-    --main-bg-clr-dark: hsl(230, 17%, 14%)
-    --top-bg-pattern-clr-dark: hsl(232, 19%, 15%)
-    --card-bg-clr-dark: hsl(228, 28%, 20%)
-    --card-bg-clr-dark-hover: hsl(228, 28%, 18%)
-    --text-dark-clr-dark: hsl(228, 34%, 66%)
-    --text-light-clr-dark: hsl(0, 0%, 100%)
+    --main-bg-clr-dark: hsl(230, 17%, 14%);
+    --top-bg-pattern-clr-dark: hsl(232, 19%, 15%);
+    --card-bg-clr-dark: hsl(228, 28%, 20%);
+    --card-bg-clr-dark-hover: hsl(230, 26%, 26%);
+    --text-dark-clr-dark: hsl(228, 34%, 66%);
+    --text-light-clr-dark: hsl(0, 0%, 100%);
 
     /* OTHER COLORS*/
     --positive-clr: hsl(163, 72%, 41%);
@@ -207,7 +207,7 @@ input[type="checkbox"].switch:checked + label:after {
 }
 
 /* ????????? */
-.count-big-light {
+.count-big {
     color: hsl(230, 17%, 14%);
     font-size: 2.5rem;
     font-weight: 700;
@@ -286,4 +286,29 @@ input[type="checkbox"].switch:checked + label:after {
     color: var(--text-dark-clr);
     font-size: 1.5rem;
     font-weight: 700;
+}
+
+/***** DARK-MODE CLASSES *****/
+.dark-mode {
+    background-color: var(--main-bg-clr-dark);
+}
+
+.dark-mode .nav-left h1,
+.dark-mode .nav-right .dark-mode-text,
+.dark-mode .count-big {
+    color: var(--text-light-clr-dark);
+}
+
+.dark-mode .nav-left .follower-count,
+.dark-mode .account-name,
+.dark-mode .follow-sub {
+    color: var(--text-dark-clr-dark);
+}
+
+.dark-mode .card-big {
+    background-color: var(--card-bg-clr-dark);
+}
+
+.dark-mode .card-big:hover {
+    background-color: var(--card-bg-clr-dark-hover);
 }
