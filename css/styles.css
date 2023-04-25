@@ -38,11 +38,12 @@
 
 body {
     background-color: var(--main-bg-clr);
+    /* height: 100vh; */
     margin: 5% 12% 7%;
 }
 
-header {
-    margin-bottom: 40px;
+#theme {
+    /* height: 100%; */
 }
 
 h1 {
@@ -75,6 +76,7 @@ h2 {
 .header {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 40px;
 }
 
 .follower-count {
@@ -292,31 +294,31 @@ input[type="checkbox"].switch:checked + label:after {
 }
 
 /***** DARK-MODE CLASSES *****/
-.dark-mode {
+.dark-mode-theme {
     background-color: var(--main-bg-clr-dark);
 }
 
-.dark-mode .nav-left h1,
-.dark-mode .nav-right .dark-mode-text,
-.dark-mode .card-big .count-big,
-.dark-mode h2,
-.dark-mode .card-small .count-small {
+.dark-mode-theme .nav-left h1,
+.dark-mode-theme .nav-right .dark-mode-text,
+.dark-mode-theme .card-big .count-big,
+.dark-mode-theme h2,
+.dark-mode-theme .card-small .count-small {
     color: var(--text-light-clr-dark);
 }
 
-.dark-mode .nav-left .follower-count,
-.dark-mode .card-big .account-name,
-.dark-mode .card-big .follow-sub,
-.dark-mode .card-small .views-likes {
+.dark-mode-theme .nav-left .follower-count,
+.dark-mode-theme .card-big .account-name,
+.dark-mode-theme .card-big .follow-sub,
+.dark-mode-theme .card-small .views-likes {
     color: var(--text-dark-clr-dark);
 }
 
-.dark-mode .card-big,
-.dark-mode .card-small {
+.dark-mode-theme .card-big,
+.dark-mode-theme .card-small {
     background-color: var(--card-bg-clr-dark);
 }
 
-.dark-mode .card-big:hover,
-.dark-mode .card-small:hover {
+.dark-mode-theme .card-big:hover,
+.dark-mode-theme .card-small:hover {
     background-color: var(--card-bg-clr-dark-hover);
 }

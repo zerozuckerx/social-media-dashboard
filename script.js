@@ -1,19 +1,34 @@
-localStorage.setItem("mode", "light-mode")
-let mode = localStorage.getItem("mode"); //apparently not working
-console.log(mode);
-
-const toggleButton = document.querySelector("input[type=checkbox]");
+//***** VARIABLES *****
+const toggleBtn = document.querySelector("input[type=checkbox]");
 const body = document.querySelector("body");
+let darkMode = localStorage.getItem("dark-mode");
 
-toggleButton.addEventListener("change", () => darkModeOn());
+toggleBtn.addEventListener("change", () => darkModeSwitch());
 
-function darkModeOn() {
-  if (localStorage.getItem("mode") === "light-mode") {
-    localStorage.setItem("mode", "dark-mode")
-    console.log("set to dark");
+
+//***** FUNCTIONS *****
+if(localStorage.getItem("dark-mode") === "enabled") {
+  toggleBtn.checked = true;
+  body.classList.add("dark-mode-theme");
+} //check if dark-mode is already on when visiting page
+
+function darkModeSwitch() {
+  darkMode = localStorage.getItem("dark-mode");
+  if(darkMode === "disabled") {
+    enableDarkMode();
+    console.log("enable");
   } else {
-    localStorage.setItem("mode", "light-mode")
-    console.log("set to light");
+    disableDarkMode()
+    console.log("disable");
   }
-  body.classList.toggle("dark-mode");
-};
+}
+
+function enableDarkMode() {
+  body.classList.add("dark-mode-theme")
+  localStorage.setItem("dark-mode", "enabled");
+}
+
+function disableDarkMode() {
+  body.classList.remove("dark-mode-theme")
+  localStorage.setItem("dark-mode", "disabled");
+}
