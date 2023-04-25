@@ -39,11 +39,7 @@
 body {
     background-color: var(--main-bg-clr);
     /* height: 100vh; */
-    margin: 5% 12% 7%;
-}
-
-#theme {
-    /* height: 100%; */
+    margin: 5% 10%;
 }
 
 h1 {
@@ -183,17 +179,20 @@ input[type="checkbox"].switch:checked + label:after {
     background: var(--youtube-clr);
 }
 
-.card-big {
+.card {
     background-color: var(--card-bg-clr);
+}
+
+.card:hover {
+    background-color: var(--card-bg-clr-hover);
+}
+
+.card-big {
     border-bottom-left-radius: inherit;
     border-bottom-right-radius: inherit;
     margin-top: 2%;
     padding: 10%;
     text-align: center;
-}
-
-.card-big:hover {
-    background-color: var(--card-bg-clr-hover);
 }
 
 .card-big > span {
@@ -220,7 +219,7 @@ input[type="checkbox"].switch:checked + label:after {
 
 .follow-sub {
     color: var(--text-light-clr);
-    font-size: 0.5rem;
+    font-size: small;
     font-weight: 300;
     letter-spacing: 0.4rem;
 }
@@ -277,9 +276,6 @@ input[type="checkbox"].switch:checked + label:after {
     width: var(--card-width);
 }
 
-.card-small:hover {
-    background-color: var(--card-bg-clr-hover);
-}
 .views-likes {
     color: var(--text-light-clr);
     font-size: 0.8rem;
@@ -313,12 +309,10 @@ input[type="checkbox"].switch:checked + label:after {
     color: var(--text-dark-clr-dark);
 }
 
-.dark-mode-theme .card-big,
-.dark-mode-theme .card-small {
+.dark-mode-theme .card {
     background-color: var(--card-bg-clr-dark);
 }
 
-.dark-mode-theme .card-big:hover,
-.dark-mode-theme .card-small:hover {
+.dark-mode-theme .card:hover {
     background-color: var(--card-bg-clr-dark-hover);
 }
