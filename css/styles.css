@@ -3,7 +3,7 @@
     --main-bg-clr: hsl(0, 0%, 100%);
     --top-bg-pattern-clr: hsl(225, 100%, 98%);
     --card-bg-clr: hsl(227, 47%, 96%);
-    --card-bg-clr-hover: hsl(218, 46%, 93%);
+    --card-bg-clr-hover: hsl(230, 44%, 93%);
     --text-light-clr: hsl(228, 12%, 44%);
     --text-dark-clr: hsl(230, 17%, 14%);
 
@@ -38,7 +38,6 @@
 
 body {
     background-color: var(--main-bg-clr);
-    /* height: 100vh; */
     margin: 5% 10%;
 }
 
@@ -219,9 +218,9 @@ input[type="checkbox"].switch:checked + label:after {
 
 .follow-sub {
     color: var(--text-light-clr);
-    font-size: small;
+    font-size: 0.5rem;
     font-weight: 300;
-    letter-spacing: 0.4rem;
+    letter-spacing: 0.3rem;
 }
 
 .today {
