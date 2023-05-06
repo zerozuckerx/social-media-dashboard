@@ -211,12 +211,14 @@ input[type="checkbox"].switch:checked + label:after {
 }
 
 .count-big {
+    display: block;
     color: hsl(230, 17%, 14%);
     font-size: 2.5rem;
     font-weight: 700;
 }
 
 .follow-sub {
+    display: block;
     color: var(--text-light-clr);
     font-size: 0.5rem;
     font-weight: 300;
